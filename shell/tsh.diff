@@ -1,0 +1,104 @@
+0a1
+> make[1]: Entering directory `/afs/cs.cmu.edu/project/ics/im/labs/shlab/src'
+93,102c94,101
+<     PID TTY      STAT   TIME COMMAND
+<    1545 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+<    1548 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+<   16926 pts/0    Ss     0:02 zsh
+<   22054 pts/0    S+     0:00 sh ./test.sh
+<   22130 pts/0    S+     0:00 make test11
+<   22131 pts/0    S+     0:00 /bin/sh -c ./sdriver.pl -t trace11.txt -s ./tsh -a "-p"
+<   22132 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace11.txt -s ./tsh -a -p
+<   22133 pts/0    S+     0:00 ./tsh -p
+<   22138 pts/0    R      0:00 /bin/ps a
+---
+>   PID TTY      STAT   TIME COMMAND
+> 25181 pts/3    S      0:00 -usr/local/bin/tcsh -i
+> 26239 pts/3    S      0:00 make tshrefout
+> 26240 pts/3    S      0:00 /bin/sh -c make tests > tshref.out 2>&1
+> 26241 pts/3    S      0:00 make tests
+> 26295 pts/3    S      0:00 perl ./sdriver.pl -t trace11.txt -s ./tsh -a -p
+> 26296 pts/3    S      0:00 ./tsh -p
+> 26301 pts/3    R      0:00 /bin/ps a
+112,123c111,120
+<     PID TTY      STAT   TIME COMMAND
+<    1545 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+<    1548 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+<   16926 pts/0    Ss     0:02 zsh
+<   22054 pts/0    S+     0:00 sh ./test.sh
+<   22139 pts/0    S+     0:00 make test12
+<   22140 pts/0    S+     0:00 /bin/sh -c ./sdriver.pl -t trace12.txt -s ./tsh -a "-p"
+<   22141 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace12.txt -s ./tsh -a -p
+<   22142 pts/0    S+     0:00 ./tsh -p
+<   22144 pts/0    T      0:00 ./mysplit 4
+<   22145 pts/0    T      0:00 ./mysplit 4
+<   22148 pts/0    R      0:00 /bin/ps a
+---
+>   PID TTY      STAT   TIME COMMAND
+> 25181 pts/3    S      0:00 -usr/local/bin/tcsh -i
+> 26239 pts/3    S      0:00 make tshrefout
+> 26240 pts/3    S      0:00 /bin/sh -c make tests > tshref.out 2>&1
+> 26241 pts/3    S      0:00 make tests
+> 26302 pts/3    S      0:00 perl ./sdriver.pl -t trace12.txt -s ./tsh -a -p
+> 26303 pts/3    S      0:00 ./tsh -p
+> 26305 pts/3    T      0:00 ./mysplit 4
+> 26306 pts/3    T      0:00 ./mysplit 4
+> 26309 pts/3    R      0:00 /bin/ps a
+133,144c130,139
+<     PID TTY      STAT   TIME COMMAND
+<    1545 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+<    1548 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+<   16926 pts/0    Ss     0:02 zsh
+<   22054 pts/0    S+     0:00 sh ./test.sh
+<   22149 pts/0    S+     0:00 make test13
+<   22150 pts/0    S+     0:00 /bin/sh -c ./sdriver.pl -t trace13.txt -s ./tsh -a "-p"
+<   22151 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace13.txt -s ./tsh -a -p
+<   22152 pts/0    S+     0:00 ./tsh -p
+<   22154 pts/0    T      0:00 ./mysplit 4
+<   22155 pts/0    T      0:00 ./mysplit 4
+<   22158 pts/0    R      0:00 /bin/ps a
+---
+>   PID TTY      STAT   TIME COMMAND
+> 25181 pts/3    S      0:00 -usr/local/bin/tcsh -i
+> 26239 pts/3    S      0:00 make tshrefout
+> 26240 pts/3    S      0:00 /bin/sh -c make tests > tshref.out 2>&1
+> 26241 pts/3    S      0:00 make tests
+> 26310 pts/3    S      0:00 perl ./sdriver.pl -t trace13.txt -s ./tsh -a -p
+> 26311 pts/3    S      0:00 ./tsh -p
+> 26313 pts/3    T      0:00 ./mysplit 4
+> 26314 pts/3    T      0:00 ./mysplit 4
+> 26317 pts/3    R      0:00 /bin/ps a
+147,156c142,149
+<     PID TTY      STAT   TIME COMMAND
+<    1545 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+<    1548 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+<   16926 pts/0    Ss     0:02 zsh
+<   22054 pts/0    S+     0:00 sh ./test.sh
+<   22149 pts/0    S+     0:00 make test13
+<   22150 pts/0    S+     0:00 /bin/sh -c ./sdriver.pl -t trace13.txt -s ./tsh -a "-p"
+<   22151 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace13.txt -s ./tsh -a -p
+<   22152 pts/0    S+     0:00 ./tsh -p
+<   22161 pts/0    R      0:00 /bin/ps a
+---
+>   PID TTY      STAT   TIME COMMAND
+> 25181 pts/3    S      0:00 -usr/local/bin/tcsh -i
+> 26239 pts/3    S      0:00 make tshrefout
+> 26240 pts/3    S      0:00 /bin/sh -c make tests > tshref.out 2>&1
+> 26241 pts/3    S      0:00 make tests
+> 26310 pts/3    S      0:00 perl ./sdriver.pl -t trace13.txt -s ./tsh -a -p
+> 26311 pts/3    S      0:00 ./tsh -p
+> 26320 pts/3    R      0:00 /bin/ps a
+162c155
+< ./bogus: Command not found.
+---
+> ./bogus: Command not found
+170c163
+< bg: argument must be a PID or %jobid
+---
+> fg: argument must be a PID or %jobid
+192c185
+< ./bogus: Command not found.
+---
+> ./bogus: Command not found
+226a220
+> make[1]: Leaving directory `/afs/cs.cmu.edu/project/ics/im/labs/shlab/src'
